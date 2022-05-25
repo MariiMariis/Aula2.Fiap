@@ -38,6 +38,7 @@ namespace Aula2.Fiap.Bank.Models
             {
                 throw new SaldoInsuficienteException("Saldo insuficiente para realizar a operação.");
             }
+            Saldo -= valor;
         }
 
         public decimal RetornarSaldoTotal()
@@ -61,7 +62,11 @@ namespace Aula2.Fiap.Bank.Models
             {
                 return Convert.ToDecimal(Juros) * dias * Saldo;
             }
-            return 0;
+            else
+            {
+                return 0;
+            
+            }
         }
 
 

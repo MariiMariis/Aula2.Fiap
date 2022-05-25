@@ -14,6 +14,7 @@ namespace Aula2.Fiap.Bank.Models
 
         public string Telefone { get; set; }
 
+        // Construtor
         public Cliente(string nome, string cpf, string telefone)
         {
             Nome = nome;
